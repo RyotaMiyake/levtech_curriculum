@@ -8,7 +8,7 @@
         <h1>Blog Name</h1>
         <form action="/posts" method="POST">
             @csrf
-            <div class="body">
+            <div class="title">
                 <h2>Title</h2>
                 <input type="text" name="post[title]" placeholder="タイトル" value="{{ old('post.title') }}"/>
                 <p class="title__error" style="color:red">{{ $errors->first('post.title') }}</p>
